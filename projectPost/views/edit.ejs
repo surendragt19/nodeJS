@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Post</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Update Post Form</h1>
+        <form id="registration-form" action="/updatePost/<%= postD[0]._id %>" method="POST">
+            <label for="content">Content:</label>
+            <textarea id="content" rows="4" name="content"><%= postD[0].content %></textarea>
+            <button type="submit" style="margin-top: 15px;">Update Post</button>
+        </form>
+    </div>
+</body>
+</html>
